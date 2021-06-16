@@ -1,7 +1,7 @@
 import socket
 
 
-SERVER_IP = '0.0.0.0'
+SERVER_IP = '192.168.122.243'
 SERVER_PORT = 5005
 
 
@@ -10,9 +10,6 @@ sock.bind((SERVER_IP, SERVER_PORT))
 
 while True:
     data, addr = sock.recvfrom(1024)
-    #buffer size 1024
+    # buffer size 1024
     print("diterima ", data)
-    print("dikirim oleh " , addr)
-
-
-
+    print("dikirim oleh ", addr)
