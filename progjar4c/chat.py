@@ -9,9 +9,14 @@ class Chat:
 	def __init__(self):
 		self.sessions={}
 		self.users = {}
-		self.users['messi']={ 'nama': 'Lionel Messi', 'negara': 'Argentina', 'password': 'surabaya', 'incoming' : {}, 'outgoing': {}}
-		self.users['henderson']={ 'nama': 'Jordan Henderson', 'negara': 'Inggris', 'password': 'surabaya', 'incoming': {}, 'outgoing': {}}
-		self.users['lineker']={ 'nama': 'Gary Lineker', 'negara': 'Inggris', 'password': 'surabaya','incoming': {}, 'outgoing':{}}
+        self.users['messi'] = {'nama': 'Lionel Messi', 'negara': 'Argentina',
+                               'password': 'catalan', 'incoming': {}, 'outgoing': {}}
+        self.users['henderson'] = {'nama': 'Jordan Henderson', 'negara': 'Inggris',
+                                   'password': 'surabaya', 'incoming': {}, 'outgoing': {}}
+        self.users['lineker'] = {'nama': 'Gary Lineker', 'negara': 'Inggris',
+                                 'password': 'malang', 'incoming': {}, 'outgoing': {}}
+        self.users['aguero'] = {'nama': 'Sergio Aguero', 'negara': 'argentina',
+                                'password': 'sidoarjo', 'incoming': {}, 'outgoing': {}}
 	def proses(self,data):
 		j=data.split(" ")
 		try:
